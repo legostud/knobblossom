@@ -1,0 +1,46 @@
+<div id="page">
+	<div id="logo-wrapper">
+		<div id="logo">
+			<h2>
+			KN<span class="flower">O</span>BBL<span class="flower">O</span>SS<span class="flower">O</span>M
+			</h2>
+			<h1>Custom LEGO<sup>&reg;</sup> models</h1>
+		</div>
+	</div>
+	<footer>
+		&copy;2013 Knobblossom. LEGO&reg;, the minifigure, and the brick configuration are property of The LEGO Group of Companies, which does not sponsor, own, or endorse this site.
+	</footer>
+
+	<section class="gallery">
+		<div class="tab horizontal">Gallery</div>
+		<div class="wrapper">
+			<h2><%= @photo_album.title %></h2>
+			<section class="thumbnails slider">
+				<% @photo_album.photos.each do |photo| %>
+				<div class="thumbnail">
+					<%= link_to image_tag(photo.photo.url(:small), :alt => photo.caption, :title => photo.title), photo.photo.url(:large) %>
+				</div>
+				<% end %>
+			</section>
+			<section class="photo">
+      			<%= image_tag(@photo_album.top_photo_url(:large)) %>
+			</section>
+		</div>
+	</section>
+</div>
+
+
+<div id="flower-template">
+	<span class="flower-container">
+    <!-- six pedals must be first -->
+    <span class="pedal"></span>
+  	<span class="pedal"></span>
+  	<span class="pedal"></span>
+  	<span class="pedal"></span>
+  	<span class="pedal"></span>
+  	<span class="pedal"></span>
+  	<span class="base"></span>
+    <span class="stud"></span>
+  	<span class="stem"></span>
+  </span>
+</div>
