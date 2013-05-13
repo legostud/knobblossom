@@ -4,4 +4,8 @@ class HomeController < ApplicationController
 	def index
 		@photo_album = SpudPhotoAlbum.last
 	end
+
+	def getPhotos
+
+	end
 end
