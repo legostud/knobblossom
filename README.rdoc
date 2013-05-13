@@ -1,0 +1,5 @@
+== Welcome to Knobblossom
+
+This is a personal website I'm building using Ruby on Rails to show off 
+the custom LEGO models I've built for clients.
+
