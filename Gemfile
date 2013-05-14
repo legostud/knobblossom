@@ -7,6 +7,7 @@ gem 'rails', '3.2.13'
 
 group :development do
 	gem 'sqlite3'
+	gem "better_errors"
 end
 
 group :production do
@@ -48,9 +49,7 @@ group :test, :development do
 	gem "rspec-rails", "~> 2.0"
 end
 
-group :development do
-	gem "better_errors"
-end
+
 
 # More information https://github.com/gregawoods/spud_photos
 gem 'spud_photos'
