@@ -45,11 +45,6 @@ gem 'jquery-rails'
 gem 'debugger'
 
 gem 'awesome_print'
-group :test, :development do
-	gem "rspec-rails", "~> 2.0"
-end
-
-
 
 # More information https://github.com/gregawoods/spud_photos
 gem 'spud_photos'
