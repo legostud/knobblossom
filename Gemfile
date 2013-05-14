@@ -7,7 +7,7 @@ gem 'rails', '3.2.13'
 
 group :development do
 	gem 'sqlite3'
-	gem "better_errors"
+	# gem "better_errors"
 end
 
 group :production do
@@ -42,9 +42,9 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-gem 'debugger'
+# gem 'debugger'
 
-gem 'awesome_print'
+# gem 'awesome_print'
 
 # More information https://github.com/gregawoods/spud_photos
 gem 'spud_photos'
